@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="alfont_com_AlFont_com_Araboto-Bold.ttf">
+            <string>Araboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaySheetDetailViewController" customModule="SIRHCOBNOMINA" customModuleProvider="target">
+            <connections>
+                <outlet property="elipsedCenterXConstraint" destination="ah4-Rl-pJ8" id="Kyb-cY-qVR"/>
+                <outlet property="imageViewEmployee" destination="6Rw-fc-ZTp" id="bwq-Kx-Ccq"/>
+                <outlet property="labelStatus" destination="zsm-bx-vd0" id="Yf1-be-5wq"/>
+                <outlet property="tableView" destination="X5c-P9-swD" id="QsY-Xq-FfS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="X5c-P9-swD">
+                    <rect key="frame" x="0.0" y="49" width="414" height="813"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="hAM-mp-9Qx"/>
+                        <outlet property="delegate" destination="-1" id="peb-1h-1za"/>
+                    </connections>
+                </tableView>
+                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" translatesAutoresizingMaskIntoConstraints="NO" id="vs5-KI-pCG" customClass="PaySheetDetailViewCell" customModule="SIRHCOBNOMINA" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vs5-KI-pCG" id="dxH-FF-ZtJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tableViewCellContentView>
+                </tableViewCell>
+                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Rw-fc-ZTp" customClass="EllipsedView" customModule="SIRHCOBNOMINA" customModuleProvider="target">
+                    <rect key="frame" x="162" y="49" width="90" height="110"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="110" id="7fK-Bh-3Du"/>
+                        <constraint firstAttribute="width" constant="90" id="sSy-qg-ISz"/>
+                    </constraints>
+                </imageView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BAJA POR RENUNCIA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsm-bx-vd0">
+                    <rect key="frame" x="257" y="94" width="130" height="20"/>
+                    <color key="backgroundColor" red="0.37647058823529411" green="0.43137254901960786" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="37G-8N-wIx"/>
+                        <constraint firstAttribute="width" constant="130" id="QTj-fv-fxr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Araboto-Bold" family="Araboto-Bold" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="X5c-P9-swD" secondAttribute="bottom" id="4er-G5-3Fd"/>
+                <constraint firstItem="6Rw-fc-ZTp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="MUy-yc-GEd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="X5c-P9-swD" secondAttribute="trailing" id="RtG-FI-4rk"/>
+                <constraint firstItem="zsm-bx-vd0" firstAttribute="centerY" secondItem="6Rw-fc-ZTp" secondAttribute="centerY" id="SaV-3V-Y2i"/>
+                <constraint firstItem="6Rw-fc-ZTp" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="ah4-Rl-pJ8"/>
+                <constraint firstItem="X5c-P9-swD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="suT-Np-ua9"/>
+                <constraint firstItem="X5c-P9-swD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="x3k-mI-zT2"/>
+                <constraint firstItem="zsm-bx-vd0" firstAttribute="leading" secondItem="6Rw-fc-ZTp" secondAttribute="trailing" constant="5" id="zJ0-h8-zhB"/>
+            </constraints>
+            <point key="canvasLocation" x="142" y="132"/>
+        </view>
+        <customObject id="g7w-Jb-bGP" customClass="PaySheetViewModel" customModule="SIRHCOBNOMINA" customModuleProvider="target"/>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

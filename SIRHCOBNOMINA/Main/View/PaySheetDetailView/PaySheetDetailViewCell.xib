@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="alfont_com_AlFont_com_Araboto-Normal.ttf">
+            <string>Araboto-Normal</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellId" rowHeight="61" id="KGk-i7-Jjw" customClass="PaySheetDetailViewCell" customModule="SIRHCOBNOMINA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CwX-Eb-JU0">
+                        <rect key="frame" x="10" y="5" width="158" height="50"/>
+                        <fontDescription key="fontDescription" name="Araboto-Normal" family="Araboto-Normal" pointSize="13"/>
+                        <color key="textColor" red="0.42745098039215684" green="0.44705882352941173" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCs-af-H1Z">
+                        <rect key="frame" x="213" y="5" width="153" height="50"/>
+                        <fontDescription key="fontDescription" name="Araboto-Normal" family="Araboto-Normal" pointSize="14"/>
+                        <color key="textColor" red="0.42745098040000001" green="0.44705882349999998" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="CwX-Eb-JU0" secondAttribute="bottom" constant="5" id="EQK-td-cPP"/>
+                    <constraint firstItem="CwX-Eb-JU0" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.5" constant="-30" id="YQy-nS-Xp4"/>
+                    <constraint firstAttribute="bottom" secondItem="fCs-af-H1Z" secondAttribute="bottom" constant="5" id="e05-gD-WVX"/>
+                    <constraint firstItem="fCs-af-H1Z" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.5" constant="-35" id="en4-td-JNI"/>
+                    <constraint firstItem="CwX-Eb-JU0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="jdL-F9-dhV"/>
+                    <constraint firstAttribute="trailing" secondItem="fCs-af-H1Z" secondAttribute="trailing" constant="10" id="kmP-54-CTa"/>
+                    <constraint firstItem="fCs-af-H1Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="uZb-V1-Cas"/>
+                    <constraint firstItem="CwX-Eb-JU0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="z4d-rf-SeM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="labelDesc" destination="CwX-Eb-JU0" id="8Tb-lH-8ZI"/>
+                <outlet property="labelValue" destination="fCs-af-H1Z" id="NFE-3e-Y53"/>
+            </connections>
+            <point key="canvasLocation" x="181.15942028985509" y="137.27678571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

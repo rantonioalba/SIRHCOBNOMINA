@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		041D940925C8C6BB001544F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041D940825C8C6BB001544F8 /* AppDelegate.swift */; };
-		041D940B25C8C6BB001544F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041D940A25C8C6BB001544F8 /* SceneDelegate.swift */; };
 		041D940D25C8C6BB001544F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041D940C25C8C6BB001544F8 /* ViewController.swift */; };
 		041D941025C8C6BC001544F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041D940E25C8C6BC001544F8 /* Main.storyboard */; };
 		041D941325C8C6BC001544F8 /* SIRHCOBNOMINA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 041D941125C8C6BC001544F8 /* SIRHCOBNOMINA.xcdatamodeld */; };
@@ -16,6 +15,32 @@
 		041D941825C8C6FC001544F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041D941625C8C6FC001544F8 /* LaunchScreen.storyboard */; };
 		041D942325C8C6FF001544F8 /* SIRHCOBNOMINATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041D942225C8C6FF001544F8 /* SIRHCOBNOMINATests.swift */; };
 		041D942E25C8C6FF001544F8 /* SIRHCOBNOMINAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041D942D25C8C6FF001544F8 /* SIRHCOBNOMINAUITests.swift */; };
+		041D944125C8CAC2001544F8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041D943F25C8CAC2001544F8 /* LoginViewController.swift */; };
+		041D944225C8CAC2001544F8 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041D944025C8CAC2001544F8 /* LoginViewController.xib */; };
+		4905970625DBA2250095C268 /* MPaySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4905970525DBA2250095C268 /* MPaySheet.swift */; };
+		4905970C25DBA7630095C268 /* PaySheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4905970A25DBA7630095C268 /* PaySheetViewController.swift */; };
+		4905970D25DBA7630095C268 /* PaySheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4905970B25DBA7630095C268 /* PaySheetViewController.xib */; };
+		4905971425DBA9480095C268 /* PaySheetViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4905971225DBA9480095C268 /* PaySheetViewCell.swift */; };
+		4905971525DBA9480095C268 /* PaySheetViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4905971325DBA9480095C268 /* PaySheetViewCell.xib */; };
+		490931EB25E94F6C003A5C56 /* PaySheetDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490931EA25E94F6B003A5C56 /* PaySheetDetailCoordinator.swift */; };
+		490A6BBA25E8865100EE6843 /* PaySheetCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490A6BB925E8865000EE6843 /* PaySheetCoordinator.swift */; };
+		490B2404260A9C46003598E6 /* alfont_com_AlFont_com_Araboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 490B2401260A9C3E003598E6 /* alfont_com_AlFont_com_Araboto-Bold.ttf */; };
+		490B2405260A9C46003598E6 /* alfont_com_AlFont_com_Araboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 490B2402260A9C43003598E6 /* alfont_com_AlFont_com_Araboto-Medium.ttf */; };
+		490B2406260A9C46003598E6 /* alfont_com_AlFont_com_Araboto-Normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 490B2403260A9C45003598E6 /* alfont_com_AlFont_com_Araboto-Normal.ttf */; };
+		491B79F8261D7183008304BA /* UITableView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491B79F7261D7183008304BA /* UITableView+Additions.swift */; };
+		4935218E25D175110037C4C5 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935218D25D175110037C4C5 /* LoginService.swift */; };
+		4935219325D178390037C4C5 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935219225D178390037C4C5 /* UserViewModel.swift */; };
+		4935219825D1788C0037C4C5 /* MUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935219725D1788C0037C4C5 /* MUser.swift */; };
+		494188F325E6250300A06EFD /* PaySheetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494188F125E6250200A06EFD /* PaySheetDetailViewController.swift */; };
+		494188F425E6250300A06EFD /* PaySheetDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 494188F225E6250200A06EFD /* PaySheetDetailViewController.xib */; };
+		494188FA25E629B400A06EFD /* PaySheetDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494188F825E629B400A06EFD /* PaySheetDetailViewCell.swift */; };
+		494188FB25E629B400A06EFD /* PaySheetDetailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 494188F925E629B400A06EFD /* PaySheetDetailViewCell.xib */; };
+		495A92D525DEC76E00F788D2 /* PaySheetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495A92D425DEC76E00F788D2 /* PaySheetService.swift */; };
+		495E96CC25E63599004B6B41 /* PaySheetDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E96CB25E63599004B6B41 /* PaySheetDetailViewModel.swift */; };
+		495E96D125E63733004B6B41 /* MPaySheetDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E96D025E63733004B6B41 /* MPaySheetDetail.swift */; };
+		4987190325D8B2D100037071 /* MAuthenticate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4987190225D8B2D000037071 /* MAuthenticate.swift */; };
+		49A9BFC825DBB3CF0066EED1 /* PaySheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9BFC725DBB3CF0066EED1 /* PaySheetViewModel.swift */; };
+		49FFDBEB25E80A1400AB6D72 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FFDBEA25E80A1400AB6D72 /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +63,6 @@
 /* Begin PBXFileReference section */
 		041D940525C8C6BB001544F8 /* SIRHCOBNOMINA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SIRHCOBNOMINA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		041D940825C8C6BB001544F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		041D940A25C8C6BB001544F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		041D940C25C8C6BB001544F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		041D940F25C8C6BC001544F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		041D941225C8C6BC001544F8 /* SIRHCOBNOMINA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SIRHCOBNOMINA.xcdatamodel; sourceTree = "<group>"; };
@@ -51,6 +75,32 @@
 		041D942925C8C6FF001544F8 /* SIRHCOBNOMINAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SIRHCOBNOMINAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		041D942D25C8C6FF001544F8 /* SIRHCOBNOMINAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIRHCOBNOMINAUITests.swift; sourceTree = "<group>"; };
 		041D942F25C8C6FF001544F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041D943F25C8CAC2001544F8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		041D944025C8CAC2001544F8 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		4905970525DBA2250095C268 /* MPaySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPaySheet.swift; sourceTree = "<group>"; };
+		4905970A25DBA7630095C268 /* PaySheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaySheetViewController.swift; sourceTree = "<group>"; };
+		4905970B25DBA7630095C268 /* PaySheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaySheetViewController.xib; sourceTree = "<group>"; };
+		4905971225DBA9480095C268 /* PaySheetViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaySheetViewCell.swift; sourceTree = "<group>"; };
+		4905971325DBA9480095C268 /* PaySheetViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaySheetViewCell.xib; sourceTree = "<group>"; };
+		490931EA25E94F6B003A5C56 /* PaySheetDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaySheetDetailCoordinator.swift; sourceTree = "<group>"; };
+		490A6BB925E8865000EE6843 /* PaySheetCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaySheetCoordinator.swift; sourceTree = "<group>"; };
+		490B2401260A9C3E003598E6 /* alfont_com_AlFont_com_Araboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "alfont_com_AlFont_com_Araboto-Bold.ttf"; sourceTree = "<group>"; };
+		490B2402260A9C43003598E6 /* alfont_com_AlFont_com_Araboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "alfont_com_AlFont_com_Araboto-Medium.ttf"; sourceTree = "<group>"; };
+		490B2403260A9C45003598E6 /* alfont_com_AlFont_com_Araboto-Normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "alfont_com_AlFont_com_Araboto-Normal.ttf"; sourceTree = "<group>"; };
+		491B79F7261D7183008304BA /* UITableView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Additions.swift"; sourceTree = "<group>"; };
+		4935218D25D175110037C4C5 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		4935219225D178390037C4C5 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		4935219725D1788C0037C4C5 /* MUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUser.swift; sourceTree = "<group>"; };
+		494188F125E6250200A06EFD /* PaySheetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaySheetDetailViewController.swift; sourceTree = "<group>"; };
+		494188F225E6250200A06EFD /* PaySheetDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaySheetDetailViewController.xib; sourceTree = "<group>"; };
+		494188F825E629B400A06EFD /* PaySheetDetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaySheetDetailViewCell.swift; sourceTree = "<group>"; };
+		494188F925E629B400A06EFD /* PaySheetDetailViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaySheetDetailViewCell.xib; sourceTree = "<group>"; };
+		495A92D425DEC76E00F788D2 /* PaySheetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaySheetService.swift; sourceTree = "<group>"; };
+		495E96CB25E63599004B6B41 /* PaySheetDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaySheetDetailViewModel.swift; sourceTree = "<group>"; };
+		495E96D025E63733004B6B41 /* MPaySheetDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPaySheetDetail.swift; sourceTree = "<group>"; };
+		4987190225D8B2D000037071 /* MAuthenticate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAuthenticate.swift; sourceTree = "<group>"; };
+		49A9BFC725DBB3CF0066EED1 /* PaySheetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaySheetViewModel.swift; sourceTree = "<group>"; };
+		49FFDBEA25E80A1400AB6D72 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +151,8 @@
 		041D940725C8C6BB001544F8 /* SIRHCOBNOMINA */ = {
 			isa = PBXGroup;
 			children = (
+				041D944C25C8CE39001544F8 /* Main */,
 				041D940825C8C6BB001544F8 /* AppDelegate.swift */,
-				041D940A25C8C6BB001544F8 /* SceneDelegate.swift */,
 				041D940C25C8C6BB001544F8 /* ViewController.swift */,
 				041D940E25C8C6BC001544F8 /* Main.storyboard */,
 				041D941425C8C6FC001544F8 /* Assets.xcassets */,
@@ -129,6 +179,111 @@
 				041D942F25C8C6FF001544F8 /* Info.plist */,
 			);
 			path = SIRHCOBNOMINAUITests;
+			sourceTree = "<group>";
+		};
+		041D943E25C8CA3B001544F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4916563C25E584080015E1C5 /* PaySheetDetailView */,
+				4905971C25DBA9570095C268 /* LoginView */,
+				4905971125DBA8E80095C268 /* PaySheetView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		041D944625C8CD92001544F8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4935219225D178390037C4C5 /* UserViewModel.swift */,
+				49A9BFC725DBB3CF0066EED1 /* PaySheetViewModel.swift */,
+				495E96CB25E63599004B6B41 /* PaySheetDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		041D944725C8CDB8001544F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4935219725D1788C0037C4C5 /* MUser.swift */,
+				4987190225D8B2D000037071 /* MAuthenticate.swift */,
+				4905970525DBA2250095C268 /* MPaySheet.swift */,
+				495E96D025E63733004B6B41 /* MPaySheetDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		041D944C25C8CE39001544F8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				490B2400260A9BAA003598E6 /* Resources */,
+				49FFDBE925E809C300AB6D72 /* Coordinator */,
+				4935218925D174C70037C4C5 /* API */,
+				041D944725C8CDB8001544F8 /* Model */,
+				041D943E25C8CA3B001544F8 /* View */,
+				041D944625C8CD92001544F8 /* ViewModel */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4905971125DBA8E80095C268 /* PaySheetView */ = {
+			isa = PBXGroup;
+			children = (
+				4905970A25DBA7630095C268 /* PaySheetViewController.swift */,
+				4905970B25DBA7630095C268 /* PaySheetViewController.xib */,
+				4905971225DBA9480095C268 /* PaySheetViewCell.swift */,
+				4905971325DBA9480095C268 /* PaySheetViewCell.xib */,
+			);
+			path = PaySheetView;
+			sourceTree = "<group>";
+		};
+		4905971C25DBA9570095C268 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				041D943F25C8CAC2001544F8 /* LoginViewController.swift */,
+				041D944025C8CAC2001544F8 /* LoginViewController.xib */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		490B2400260A9BAA003598E6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				490B2401260A9C3E003598E6 /* alfont_com_AlFont_com_Araboto-Bold.ttf */,
+				490B2402260A9C43003598E6 /* alfont_com_AlFont_com_Araboto-Medium.ttf */,
+				490B2403260A9C45003598E6 /* alfont_com_AlFont_com_Araboto-Normal.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4916563C25E584080015E1C5 /* PaySheetDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				494188F125E6250200A06EFD /* PaySheetDetailViewController.swift */,
+				494188F225E6250200A06EFD /* PaySheetDetailViewController.xib */,
+				494188F825E629B400A06EFD /* PaySheetDetailViewCell.swift */,
+				494188F925E629B400A06EFD /* PaySheetDetailViewCell.xib */,
+				491B79F7261D7183008304BA /* UITableView+Additions.swift */,
+			);
+			path = PaySheetDetailView;
+			sourceTree = "<group>";
+		};
+		4935218925D174C70037C4C5 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4935218D25D175110037C4C5 /* LoginService.swift */,
+				495A92D425DEC76E00F788D2 /* PaySheetService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		49FFDBE925E809C300AB6D72 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				49FFDBEA25E80A1400AB6D72 /* MainCoordinator.swift */,
+				490A6BB925E8865000EE6843 /* PaySheetCoordinator.swift */,
+				490931EA25E94F6B003A5C56 /* PaySheetDetailCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,8 +389,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041D944225C8CAC2001544F8 /* LoginViewController.xib in Resources */,
+				4905970D25DBA7630095C268 /* PaySheetViewController.xib in Resources */,
+				494188F425E6250300A06EFD /* PaySheetDetailViewController.xib in Resources */,
 				041D941825C8C6FC001544F8 /* LaunchScreen.storyboard in Resources */,
+				490B2406260A9C46003598E6 /* alfont_com_AlFont_com_Araboto-Normal.ttf in Resources */,
+				490B2405260A9C46003598E6 /* alfont_com_AlFont_com_Araboto-Medium.ttf in Resources */,
+				494188FB25E629B400A06EFD /* PaySheetDetailViewCell.xib in Resources */,
+				4905971525DBA9480095C268 /* PaySheetViewCell.xib in Resources */,
 				041D941525C8C6FC001544F8 /* Assets.xcassets in Resources */,
+				490B2404260A9C46003598E6 /* alfont_com_AlFont_com_Araboto-Bold.ttf in Resources */,
 				041D941025C8C6BC001544F8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,9 +425,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				041D940D25C8C6BB001544F8 /* ViewController.swift in Sources */,
+				4905971425DBA9480095C268 /* PaySheetViewCell.swift in Sources */,
+				495E96D125E63733004B6B41 /* MPaySheetDetail.swift in Sources */,
+				4905970C25DBA7630095C268 /* PaySheetViewController.swift in Sources */,
+				490931EB25E94F6C003A5C56 /* PaySheetDetailCoordinator.swift in Sources */,
+				4935218E25D175110037C4C5 /* LoginService.swift in Sources */,
+				4905970625DBA2250095C268 /* MPaySheet.swift in Sources */,
+				4987190325D8B2D100037071 /* MAuthenticate.swift in Sources */,
+				495A92D525DEC76E00F788D2 /* PaySheetService.swift in Sources */,
+				491B79F8261D7183008304BA /* UITableView+Additions.swift in Sources */,
+				49FFDBEB25E80A1400AB6D72 /* MainCoordinator.swift in Sources */,
 				041D940925C8C6BB001544F8 /* AppDelegate.swift in Sources */,
+				490A6BBA25E8865100EE6843 /* PaySheetCoordinator.swift in Sources */,
 				041D941325C8C6BC001544F8 /* SIRHCOBNOMINA.xcdatamodeld in Sources */,
-				041D940B25C8C6BB001544F8 /* SceneDelegate.swift in Sources */,
+				4935219825D1788C0037C4C5 /* MUser.swift in Sources */,
+				495E96CC25E63599004B6B41 /* PaySheetDetailViewModel.swift in Sources */,
+				494188F325E6250300A06EFD /* PaySheetDetailViewController.swift in Sources */,
+				494188FA25E629B400A06EFD /* PaySheetDetailViewCell.swift in Sources */,
+				49A9BFC825DBB3CF0066EED1 /* PaySheetViewModel.swift in Sources */,
+				041D944125C8CAC2001544F8 /* LoginViewController.swift in Sources */,
+				4935219325D178390037C4C5 /* UserViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +623,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y3K45A2JKJ;
 				INFOPLIST_FILE = SIRHCOBNOMINA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,6 +643,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y3K45A2JKJ;
 				INFOPLIST_FILE = SIRHCOBNOMINA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
