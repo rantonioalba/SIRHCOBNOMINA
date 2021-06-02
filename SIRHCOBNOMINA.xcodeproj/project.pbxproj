@@ -17,6 +17,7 @@
 		041D942E25C8C6FF001544F8 /* SIRHCOBNOMINAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041D942D25C8C6FF001544F8 /* SIRHCOBNOMINAUITests.swift */; };
 		041D944125C8CAC2001544F8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041D943F25C8CAC2001544F8 /* LoginViewController.swift */; };
 		041D944225C8CAC2001544F8 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041D944025C8CAC2001544F8 /* LoginViewController.xib */; };
+		2F7F5D7726555DF600D71A4D /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7F5D7626555DF600D71A4D /* SearchService.swift */; };
 		4905970625DBA2250095C268 /* MPaySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4905970525DBA2250095C268 /* MPaySheet.swift */; };
 		4905970C25DBA7630095C268 /* PaySheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4905970A25DBA7630095C268 /* PaySheetViewController.swift */; };
 		4905970D25DBA7630095C268 /* PaySheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4905970B25DBA7630095C268 /* PaySheetViewController.xib */; };
@@ -77,6 +78,7 @@
 		041D942F25C8C6FF001544F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		041D943F25C8CAC2001544F8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		041D944025C8CAC2001544F8 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		2F7F5D7626555DF600D71A4D /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
 		4905970525DBA2250095C268 /* MPaySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPaySheet.swift; sourceTree = "<group>"; };
 		4905970A25DBA7630095C268 /* PaySheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaySheetViewController.swift; sourceTree = "<group>"; };
 		4905970B25DBA7630095C268 /* PaySheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaySheetViewController.xib; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 			children = (
 				4935218D25D175110037C4C5 /* LoginService.swift */,
 				495A92D425DEC76E00F788D2 /* PaySheetService.swift */,
+				2F7F5D7626555DF600D71A4D /* SearchService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				041D940D25C8C6BB001544F8 /* ViewController.swift in Sources */,
 				4905971425DBA9480095C268 /* PaySheetViewCell.swift in Sources */,
 				495E96D125E63733004B6B41 /* MPaySheetDetail.swift in Sources */,
+				2F7F5D7726555DF600D71A4D /* SearchService.swift in Sources */,
 				4905970C25DBA7630095C268 /* PaySheetViewController.swift in Sources */,
 				490931EB25E94F6C003A5C56 /* PaySheetDetailCoordinator.swift in Sources */,
 				4935218E25D175110037C4C5 /* LoginService.swift in Sources */,

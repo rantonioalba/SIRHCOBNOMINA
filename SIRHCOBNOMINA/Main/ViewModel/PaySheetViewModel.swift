@@ -125,8 +125,24 @@ class PaySheetViewModel : NSObject {
         }
     }
     
-    
-    
+    func find(texrSearch:String, completionHandler:@escaping(_ response:Bool?)->Void)  {
+        
+        PaySheetService.search(token: user.token!, textSearch: texrSearch) { (paySheet:MAuthenticate<MPaySheet>?, error:String?) in
+            
+            if let paySheet = paySheet {
+                print(paySheet)
+                self.paySheet = paySheet
+                
+                print("Dictionary")
+                print(paySheet.dictionary)
+                
+                completionHandler(true)
+            } else {
+                completionHandler(false)
+            }
+            
+        }
+    }
 }
 
 

@@ -24,11 +24,16 @@ class PaySheetViewController: UIViewController {
         return search
     }()
     
+    public var spinnerDelegate: SpinnerDelegate!
+    var spinnerView : UIView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        self.spinnerDelegate = self
+        
         for family in UIFont.familyNames {
             print("========family:\(family)")
             for fontName in UIFont.fontNames(forFamilyName: family) {
@@ -98,15 +103,32 @@ class PaySheetViewController: UIViewController {
     @objc func tapButtonAcept(_ sender:UIBarButtonItem)  {
         self.searchBar.resignFirstResponder()
         
-        
-        let index = viewModel.indexOf(employeeNumber: searchBar.text ?? "")
-        
-        if index != -1 {
-            let indexPath = IndexPath(item: index, section: 0)
+        if let search = searchBar.text {
             
-            tableView.scrollToRow(at: indexPath, at: UITableView.ScrollPosition.top, animated: true)
+            self.spinnerDelegate.displaySpinner()
+            self.viewModel.find(texrSearch: search) { (response:Bool?) in
+                if response == true {
+                    DispatchQueue.main.async {
+                        self.spinnerDelegate.removeSpinner()
+                        self.tableView.reloadData()
+                    }
+                } else {
+                    DispatchQueue.main.async {
+                        self.spinnerDelegate.removeSpinner()
+                    }
+                }
+            }
         }
         
+        
+//        let index = viewModel.indexOf(employeeNumber: searchBar.text ?? "")
+//
+//        if index != -1 {
+//            let indexPath = IndexPath(item: index, section: 0)
+//
+//            tableView.scrollToRow(at: indexPath, at: UITableView.ScrollPosition.top, animated: true)
+//        }
+//
         searchBar.text = ""
     }
 
@@ -181,4 +203,45 @@ private extension PaySheetViewController {
         loginController.modalPresentationStyle = .fullScreen
         self.present(loginController, animated: true, completion: completionHandler)
     }
+}
+
+extension PaySheetViewController:SpinnerDelegate {
+    func displaySpinner() {
+        self.spinnerView = self.view.viewWithTag(2000)
+        
+        if self.spinnerView == nil {
+            if let window = UIApplication.shared.keyWindow {
+                spinnerView = UIView.init(frame: window.frame)
+                spinnerView!.tag = 2000
+                spinnerView?.backgroundColor = UIColor.init(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.5)
+                
+                let indicatorView = UIActivityIndicatorView(style: .whiteLarge)
+                
+                
+                indicatorView.startAnimating()
+                
+                indicatorView.center = (spinnerView?.center)!
+                
+                DispatchQueue.main.async {
+                    self.spinnerView?.addSubview(indicatorView)
+                    
+                    self.view.addSubview(self.spinnerView!)
+                }
+            }
+        }
+    }
+    
+    func removeSpinner() {
+        DispatchQueue.main.async {
+            self.spinnerView?.removeFromSuperview()
+        }
+    }
+}
+
+extension PaySheetViewController:AlertingDelegate {
+    func displayAlert(alert: UIAlertController) {
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    
 }
